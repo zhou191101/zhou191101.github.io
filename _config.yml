@@ -1,11 +1,11 @@
 # Site settings
 title: Your Blog
-SEOTitle: 你的博客 | Your Blog
+SEOTitle: zhoup的博客 | Zhoup's Blog
 header-img: img/home-bg.jpg
-email: huxpro@gmail.com
+email:
 description: ""
 keyword: ""
-url: "http://huangxuan.me"              # your host, for absolute URL
+url: ""              # your host, for absolute URL
 baseurl: "/huxblog-boilerplate"         # for example, '/blog' if your blog hosted on 'host/blog'
 
 
