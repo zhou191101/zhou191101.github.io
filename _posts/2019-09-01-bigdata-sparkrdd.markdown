@@ -6,7 +6,7 @@ date:       2019-09-01
 author:     "zhoup"
 header-img: "img/post-bg-unix-linux.jpg"
 tags:
-    - 大数据
+    - bigdata
     - Spark
 ---
 
