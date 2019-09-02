@@ -28,7 +28,7 @@ java中的7种原生数据类型都有各自对应的buffer类型，没有Boolea
 除了它本身的内容，buffer的基本属性是position、limit、capacity。
 
 初始化buffer时，position为0，limit等于capacity等于所分配的buffer大小。
-![netty](img/in-post/netty/netty_buffer.png)
+![buffer结构](https://img-blog.csdnimg.cn/20181115120623401.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI4NTQ5OTA1,size_16,color_FFFFFF,t_70)
 
 nio中三个状态属性的含义：
 
