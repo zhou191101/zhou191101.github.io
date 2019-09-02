@@ -12,11 +12,11 @@ baseurl: ""         # for example, '/blog' if your blog hosted on 'host/blog'
 
 # SNS settings
 RSS: false
-weibo_username:     zhoup
-zhihu_username:     zhoup
-github_username:    zhoup
+#weibo_username:     zhoup
+#zhihu_username:     zhoup
+github_username:    zhoup191101
 #twitter_username:  zhoup
-facebook_username:  zhoup
+#facebook_username:  zhoup
 
 
 
@@ -61,8 +61,8 @@ duoshuo_share: true                     # set to false if you want to use Commen
 # Baidu Analytics
 ba_track_id: 
 # Google Analytics
-ga_track_id: ''            # Format: UA-xxxxxx-xx
-ga_domain: 
+ga_track_id: 'UA-146894886-1'            # Format: UA-xxxxxx-xx
+ga_domain: https://zhou191101.github.io
 
 
 
@@ -82,8 +82,8 @@ featured-condition-size: 1              # A tag will be featured if the size of 
 # Friends
 friends: [
     {
-        title: "Zhoup Blog",
-        href: ""
+        title: "csdn",
+        href: "https://blog.csdn.net/qq_28549905"
     },{
         title: "Foo",
         href: "#"
