@@ -28,7 +28,7 @@ java中的7种原生数据类型都有各自对应的buffer类型，没有Boolea
 除了它本身的内容，buffer的基本属性是position、limit、capacity。
 
 初始化buffer时，position为0，limit等于capacity等于所分配的buffer大小。
-![buffer结构](https://img-blog.csdnimg.cn/20181115120623401.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzI4NTQ5OTA1,size_16,color_FFFFFF,t_70)
+![netty_buffer.png](https://github.com/zhou191101/zhou191101.github.io/blob/master/img/in-post/netty/netty_buffer.png?raw=true)
 
 nio中三个状态属性的含义：
 
@@ -96,7 +96,7 @@ Netty提供了对底层buffer容器的抽象类ByteBuf，Netty推荐使用Unpool
 - discardable bytes  指已经被相对操作的读操作访问过的数据，如果需要将可丢弃的数据丢弃，大小为可readerIndex大小。调用discardReadBytes()方法。此方法会将discardable bytes清除（实际上并没有对数据做清除操作，只是将readerIndex置为0）,然后将writerIndex索引左移，如下所示：
 
      BEFORE discardReadBytes()
-        
+     
           +-------------------+------------------+------------------+
           | discardable bytes |  readable bytes  |  writable bytes  |
           +-------------------+------------------+------------------+
@@ -145,8 +145,8 @@ Netty提供了对buffer的清除操作，除了使用上述提到的discardReadB
 
 
 ​    
-      AFTER clear()
-    
+​      AFTER clear()
+​    
           +---------------------------------------------------------+
           |             writable bytes (got more space)             |
           +---------------------------------------------------------+
