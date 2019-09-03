@@ -7,8 +7,7 @@ author:     "zhoup"
 header-img: "img/post-bg-unix-linux.jpg"
 tags:
     - 大数据
-    - Java
-    - Netty
+    - Spark
 ---
 
 > This document is not completed and will be updated anytime.
