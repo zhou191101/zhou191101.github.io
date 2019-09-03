@@ -182,7 +182,7 @@ Shuffle Hash Join的条件有以下几个：
 2. 基表不能被广播，比如left outer join时，只能广播右表
 3. 一侧的表要明显小于另外一侧，小的一侧将被广播（明显小于的定义为3倍小，此处为经验值）
 
-我们可以看到，在一定大小的表中，SparkSQL从时空结合的角度来看，将两个表进行重新分区，并且对小表中的分区进行hash化，从而完成join。在保持一定复杂度的基础上，尽量减少driver和executor的内存压力，提升了计算时的稳定性。
+我们可以看到，在一定大小的表中，SparkSQL从时空结合的角度来看，将两个表进行重新分区，并且对小表中的分区进行hash，从而完成join。在保持一定复杂度的基础上，尽量减少driver和executor的内存压力，提升了计算时的稳定性。
 
 ## 源码分析
 
@@ -609,4 +609,3 @@ case class ShuffledHashJoinExec(
 * https://www.linkedin.com/pulse/spark-sql-3-common-joins-explained-ram-ghadiyaram/
 * http://spark.apache.org/docs/latest/sql-performance-tuning.html
 * https://www.imooc.com/article/261893
-
